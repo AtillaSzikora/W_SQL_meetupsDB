@@ -7,3 +7,17 @@ List that users who have introduction (NOT NULL).
 Keep in mind handle the exceptions if necessary.
 """
 
+import mysql.connector
+mitnezel = open('mitnezel.txt', 'r').read()
+
+database_connector = mysql.connector.connect(user='root', password=mitnezel, host='127.0.0.1')
+cursor = database_connector.cursor()
+
+createsql = open("Meetup-db\\create.sql", "r").read().split(";")
+for lines in createsql:
+	cursor.execute(lines)
+
+insertsql = open("Meetup-db\\insert.sql", "r").read().split(";")
+for lines in insertsql:
+	cursor.execute(lines)
+	database_connector.commit()
