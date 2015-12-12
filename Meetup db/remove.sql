@@ -1,0 +1,5 @@
+USE MeetupDB;
+
+DELETE FROM Users WHERE Id = 5;
+DELETE FROM Users Where Avatar LIKE 'A';
+ALTER TABLE Users DROP COLUMN Avatar

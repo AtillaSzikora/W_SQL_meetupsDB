@@ -22,3 +22,11 @@ VALUES
 ('O', '2010-11-01', 'Ooo ez meg ki?', 'A', 'se@gg.ek'),
 ('Mi', '2011-11-11', 'Mikor lesz ma vege?', 'S', 'tosz@odj.meg'),
 ('Ti', '2010-10-01', 'Ti se jottok tobbet.', 'Z', 'eleg@lesz.ma');
+
+INSERT INTO Meetupregistrations (StatusId, MeetupId, UserId)
+VALUES
+(4, 2, 2),
+(3, 2, 3),
+(2, 3, 4),
+(1, 1, 4),
+(3, 5, 1);

@@ -1,0 +1,4 @@
+USE MeetupDB;
+
+ALTER TABLE Users ADD Anyjaneve VARCHAR(50) NULL;
+ALTER TABLE Users ADD Buzie CHAR(1) NULL AFTER Username
