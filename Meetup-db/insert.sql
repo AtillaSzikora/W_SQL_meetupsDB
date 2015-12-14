@@ -2,8 +2,8 @@ USE MeetupDB;
 
 INSERT INTO Meetups (Starttime, Location, Topic, Description)
 VALUES
-('2015-12-30', 'Miskolc', 'Teamwork', 'No such thing.'),
-('2015-12-31', 'Szuholy', 'Fuckups', 'Fucking up.'),
+('2015-11-15', 'Miskolc', 'Teamwork', 'No such thing.'),
+('2015-11-16', 'Szuholy', 'Fuckups', 'Fucking up.'),
 ('2015-12-29', 'Pest', 'Drinking', 'Kozepes froccs.'),
 ('2015-12-28', 'Buda', 'Destructing', 'Easy to do.'),
 ('2015-12-27', 'Puszta', 'Hupakolas', 'Istallonal.');
@@ -19,7 +19,7 @@ INSERT INTO Users (Username, Birthdate, Introduction, Avatar, Email)
 VALUES
 ('En', '2000-10-10', 'Engem nem basztok at.', 'F', 'vak@ond.hu'),
 ('Te', '2001-01-11', 'Teszed vissza.', 'A', 'fa@szalli.to'),
-('O', '2010-11-01', 'Ooo ez meg ki?', 'A', 'se@gg.ek'),
+('O', '2010-11-01', NULL, 'A', 'se@gg.ek'),
 ('Mi', '2011-11-11', 'Mikor lesz ma vege?', 'S', 'tosz@odj.meg'),
 ('Ti', '2010-10-01', 'Ti se jottok tobbet.', 'Z', 'eleg@lesz.ma');
 
