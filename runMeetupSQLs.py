@@ -13,15 +13,15 @@ mitnezel = open('mitnezel.txt', 'r').read()
 database_connector = mysql.connector.connect(user='root', password=mitnezel, host='127.0.0.1')
 cursor = database_connector.cursor()
 
-createsql = open("Meetup-db\\create.sql", "r").read().split(";")
+createsql = open("MeetupsDB\\create.sql", "r").read().split(";")
 for lines in createsql:
 	cursor.execute(lines)
 
-insertsql = open("Meetup-db\\insert.sql", "r").read().split(";")
+insertsql = open("MeetupsDB\\insert.sql", "r").read().split(";")
 for lines in insertsql:
 	cursor.execute(lines)
 
-querysql = open("Meetup-db\\query.sql", "r").read().split(";")
+querysql = open("MeetupsDB\\query.sql", "r").read().split(";")
 for lines in querysql:
 	cursor.execute(lines)
 	print(cursor.fetchall())
