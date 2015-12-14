@@ -20,6 +20,7 @@ for lines in createsql:
 insertsql = open("MeetupsDB\\insert.sql", "r").read().split(";")
 for lines in insertsql:
 	cursor.execute(lines)
+	database_connector.commit()
 
 querysql = open("MeetupsDB\\query.sql", "r").read().split(";")
 for lines in querysql:

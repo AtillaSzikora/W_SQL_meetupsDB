@@ -22,6 +22,7 @@ for lines in createsql:
 insertsql = open("SeriesDB\\insert.sql", "r").read().split(";")
 for lines in insertsql:
 	cursor.execute(lines)
+	database_connector.commit()
 
 querysql = open("SeriesDB\\query.sql", "r").read().split(";")
 for lines in querysql:
